@@ -1,5 +1,5 @@
 
-public abstract class Person implements BaseLocalInterface {
+public abstract class Person implements Learnability, Travelable {
     int age;
     String firstname;
     String lastname;

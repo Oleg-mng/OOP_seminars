@@ -9,19 +9,28 @@ public class Main {
         family.add(new Father());
         family.add(new GrandMaPa());
         family.add(new GrandPaPa());
-
         family.forEach(System.out::println);
+        Sister.Study(0);
     }
 
     public void Helper() {
         // Родители помогают получить высшее образование детям
     }
-    public void Study() {
+
+    public void Study(int n) {
         // Родители помогают получить высшее образование детям
-    }
+            if (n == OPEN)
+                System.out.println("Learn is opened");
+            else if (n == CLOSED)
+                System.out.println("Learn is closed");
+            else
+                System.out.println("State is invalid");
+        }
+
     public void DiscussInGroup() {
         // Чат с общением по разным веткам родителей (линия папы и линия мамы)
     }
+
     public void Journey() {
         // Чат для совместных поездок
     }
