@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 
+import static java.awt.geom.Arc2D.OPEN;
+
 public class Main {
     public static void main(String[] args) {
         ArrayList<Person> family = new ArrayList<>();
@@ -19,9 +21,9 @@ public class Main {
 
     public void Study(int n) {
         // Родители помогают получить высшее образование детям
-            if (n == OPEN)
+            if (n == Learnability.OPEN)
                 System.out.println("Learn is opened");
-            else if (n == CLOSED)
+            else if (n == Learnability.CLOSED)
                 System.out.println("Learn is closed");
             else
                 System.out.println("State is invalid");
